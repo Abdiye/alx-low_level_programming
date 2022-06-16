@@ -1,26 +1,35 @@
 #include "main.h"
-/**
- * rot13 - encrypts code
- * @s: string to encrypt
- * Return: char value
- */
-char *rot13(char *s)
-{
-	int i;
-	int j;
-	char encode1[] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
-	char encode2[] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
 
-	for (i = 0; s[i] != '\0'; i++)
+/**
+ * print_number - prints an integer.
+ * @n: input integer.
+ * Return: no return.
+ */
+void print_number(int n)
+{
+	unsigned int m, d, count;
+
+	if (n < 0)
 	{
-		for (j = 0; encode1[j]; j++)
-		{
-			if (s[i] == encode1[j])
-			{
-				s[i] = encode2[j];
-				break;
-			}
-		}
+		_putchar(45);
+		m = n * -1;
 	}
-	return (s);
+	else
+	{
+		m = n;
+	}
+
+	d = m;
+	count = 1;
+
+	while (d > 9)
+	{
+		d /= 10;
+		count *= 10;
+	}
+
+	for (; count >= 1; count /= 10)
+	{
+		_putchar(((m / count) % 10) + 48);
+	}
 }
