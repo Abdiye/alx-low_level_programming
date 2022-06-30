@@ -1,31 +1,3 @@
-
-Skip to content
-Pull requests
-Issues
-Marketplace
-Explore
-@Abdiye
-wawababa /
-alx-low_level_programming
-Public
-
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-
-    Insights
-
-alx-low_level_programming/0x0C-more_malloc_free/100-realloc.c
-@wawababa
-wawababa commit
-Latest commit e0773aa 7 hours ago
-History
-1 contributor
-executable file 41 lines (39 sloc) 896 Bytes
 #include <stdlib.h>
 #include "main.h"
 /**
