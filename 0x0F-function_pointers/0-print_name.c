@@ -1,12 +1,10 @@
+#include "main.h"
 /**
-  *print_name - prints a name.
-  *@name: pointer to name.
-  *@f: function pointer.
-  *
-  *Return: void.
-  */
-void print_name(char *name, void (*f)(char *))
+ *set_string - set the value of a pointer to a char
+ *@s: porinter to pointer
+ *@to: pointer
+ */
+void set_string(char **s, char *to)
 {
-	if (name && f)
-		f(name);
+  *s = to;
 }	
