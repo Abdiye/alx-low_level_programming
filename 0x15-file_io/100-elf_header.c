@@ -47,4 +47,3 @@ void print_addr(char *ptr)
 				printf("%02x", 256 + ptr[i]);
 
 		}
-
